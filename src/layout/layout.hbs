@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>{{title}}</title>
+        {{#unless isIndex}}
+            <link rel="stylesheet" href="../../layout/layout.less">
+        {{/unless}}
+        {{#each css}}
+            <link rel="stylesheet" href="./{{this}}">
+        {{/each}}
+    </head>
+    <body>
+        {{{body}}}
+        {{#each js}}
+            <script src="./{{this}}"></script>
+        {{/each}}
+    </body>
+</html>

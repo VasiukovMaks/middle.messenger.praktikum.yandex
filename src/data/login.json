@@ -1,0 +1,24 @@
+{
+  "title": {
+    "text": "Вход"
+  },
+  "inputs": [
+    {
+      "type": "text",
+      "text": "Логин",
+      "name": "login"
+    },
+    {
+      "type": "password",
+      "text": "Пароль",
+      "name": "password"
+    }
+  ],
+  "button": {
+    "text": "Авторизоваться"
+  },
+  "link": {
+    "text": "Нет аккаунта?",
+    "href": "../signup/signup.hbs"
+  }
+}

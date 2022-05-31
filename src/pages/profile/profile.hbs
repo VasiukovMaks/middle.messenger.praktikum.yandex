@@ -1,0 +1,47 @@
+---
+title: Профиль
+css:
+- profile.less
+---
+
+{{!< layout}}
+
+<main>
+    <div class="profile__back-button">
+        <a href="../chat/chat.hbs">
+            {{> button/button
+                    type="button"
+            }}
+        </a>
+    </div>
+    <div class="profile__content">
+        <div class="profile__avatar">
+            <div class="profile__avatar__tooltip">
+                {{ profile.avatar.tooltip }}
+            </div>
+        </div>
+        <h1> {{ profile.title }}</h1>
+        <div>
+            {{#each profile.inputs as |input|}}
+                <div class="profile__input">
+                    {{> input/input
+                            type=input.type
+                            inputName=input.text
+                            name=input.name
+                            value=input.mockValue
+                            isDisabled=true
+                    }}
+                </div>
+            {{/each}}
+        </div>
+        <div>
+            {{#each profile.links as |link|}}
+                <div class="profile__link">
+                    {{> link/link
+                            text=link.text
+                    }}
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</main>
