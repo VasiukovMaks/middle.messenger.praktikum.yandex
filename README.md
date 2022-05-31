@@ -3,7 +3,7 @@
 В данном проекте представлены статические страницы для приложения чата.
 Страницы верстались по [макету](https://www.figma.com/file/jF5fFFzgGOxQeB4CmKWTiE/Chat_external_link?node-id=0%3A1)
 
-Задеплоеный проект [тут](https://inspiring-alpaca-13a311.netlify.app/)
+Задеплоеный проект [тут](https://mvchat.netlify.app/)
 
 Установка зависимостей
 > npm install
