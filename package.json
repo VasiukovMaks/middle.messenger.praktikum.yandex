@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "parcel src/index.hbs src/pages/**/*.hbs --no-cache",
     "build": "parcel build src/index.hbs src/pages/**/*.hbs",
-    "npm run start": "parcel build src/index.hbs && node app.js"
+    "start": "parcel build src/index.hbs && node app.js"
   },
   "author": "",
   "license": "ISC",
