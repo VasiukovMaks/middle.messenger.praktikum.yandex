@@ -1,0 +1,20 @@
+<main>
+    <form class="entry-form">
+        <div>
+            <h1 class="entry-form__title">{{ titleText }}</h1>
+            {{> @partial-block }}
+        </div>
+        <div>
+            {{> button/button
+                    classes="entry-form__button"
+                    text=buttonText
+                    type="submit"
+            }}
+            {{> link/link
+                    text=linkText
+                    classes="entry-form__link"
+                    href=linkHref
+            }}
+        </div>
+    </form>
+</main>

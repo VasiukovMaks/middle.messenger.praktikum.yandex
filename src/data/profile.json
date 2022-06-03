@@ -1,0 +1,55 @@
+{
+  "avatar": {
+    "tooltip": "Поменять аватар"
+  },
+  "title": "Вася",
+  "inputs": [
+    {
+      "type": "text",
+      "text": "Почта",
+      "name": "email",
+      "mockValue": "pochta@yandex.ru"
+    },
+    {
+      "type": "text",
+      "text": "Логин",
+      "name": "login",
+      "mockValue": "ivanivanov"
+    },
+    {
+      "type": "text",
+      "text": "Имя",
+      "name": "first_name",
+      "mockValue": "Иван"
+    },
+    {
+      "type": "text",
+      "text": "Фамилия",
+      "name": "second_name",
+      "mockValue": "Иванов"
+    },
+    {
+      "type": "text",
+      "text": "Имя в чате",
+      "name": "name",
+      "mockValue": "Иван"
+    },
+    {
+      "type": "text",
+      "text": "Телефон",
+      "name": "phone",
+      "mockValue": "+7 (909) 967 30 30"
+    }
+  ],
+  "links": [
+    {
+      "text": "Изменить данные"
+    },
+    {
+      "text": "Изменить пароль"
+    },
+    {
+      "text": "Выйти"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "title": {
+    "text": "Регистрация"
+  },
+  "inputs": [
+    {
+      "type": "text",
+      "text": "Почта",
+      "name": "email"
+    },
+    {
+      "type": "text",
+      "text": "Логин",
+      "name": "login"
+    },
+    {
+      "type": "text",
+      "text": "Имя",
+      "name": "first_name"
+    },
+    {
+      "type": "text",
+      "text": "Фамилия",
+      "name": "second_name"
+    },
+    {
+      "type": "text",
+      "text": "Телефон",
+      "name": "phone"
+    },
+    {
+      "type": "password",
+      "text": "Пароль",
+      "name": "password"
+    },
+    {
+      "type": "password",
+      "text": "Пароль (еще раз)"
+    }
+  ],
+  "button": {
+    "text": "Авторизоваться"
+  },
+  "link": {
+    "text": "Войти",
+    "href": "../login/login.hbs"
+  }
+}

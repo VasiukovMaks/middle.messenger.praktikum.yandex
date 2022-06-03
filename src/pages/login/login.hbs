@@ -1,0 +1,24 @@
+---
+title: Вход
+css:
+    - login.less
+---
+
+{{!< layout}}
+
+{{#> entryForm/entryForm
+        titleText=login.title.text
+        buttonText=login.button.text
+        linkText=login.link.text
+        linkHref=login.link.href
+}}
+    {{#each login.inputs as |input|}}
+        {{> input/input
+                inputClasses="entry-form__input"
+                labelClasses="entry-form__label"
+                type=input.type
+                inputName=input.text
+                name=input.name
+        }}
+    {{/each}}
+{{/ entryForm/entryForm }}
