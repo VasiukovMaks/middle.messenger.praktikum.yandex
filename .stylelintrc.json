@@ -1,0 +1,12 @@
+{
+  "plugins": [
+    "stylelint-less"
+  ],
+  "extends": ["./node_modules/stylelint-config-recommended-less"],
+  "rules": {
+    "color-hex-case": "lower"
+  },
+  "ignoreFiles": [
+    "dist/*"
+  ]
+}
