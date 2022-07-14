@@ -8,6 +8,8 @@
 
 В проекте применены паттерны Event Bus, MVC, а также внедрены такие технологии как TypeScript, ESLint, Stylelint.
 
+Задеплоеный проект [тут](https://mvchat.netlify.app/)
+
 Страницы верстались по [макету](https://www.figma.com/file/jF5fFFzgGOxQeB4CmKWTiE/Chat_external_link?node-id=0%3A1)
 
 
