@@ -7,13 +7,12 @@
   },
   "scripts": {
     "dev": "parcel src/index.html src/pages/**/*.html --no-cache",
-    "build": "parcel build src/index.html",
+    "build": "parcel build src/index.html src/pages/**/*.html",
     "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@anikin/parcel-transformer-handlebars": "1.0.9",
     "@anikin/parcel-transformer-handlebars-precompile": "1.0.1",
     "@parcel/transformer-less": "2.6.0",
     "@typescript-eslint/eslint-plugin": "5.27.0",
@@ -31,5 +30,15 @@
     "dotenv": "16.0.1",
     "express": "4.18.1",
     "nanoid": "^4.0.0"
+  },
+  "targets": {
+    "web": {
+      "engines": {
+        "browsers": [
+          "> 1%",
+          "not dead"
+        ]
+      }
+    }
   }
 }
