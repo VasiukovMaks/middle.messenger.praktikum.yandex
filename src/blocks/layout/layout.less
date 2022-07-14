@@ -1,0 +1,24 @@
+@import "../../utils/less/normalize";
+@import "../../utils/less/color";
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Inter", sans-serif, serif;
+  font-size: 14px;
+  line-height: 22px;
+  box-sizing: border-box;
+  color: @black;
+  height: inherit;
+  font-weight: 500;
+
+  & > div, .layout {
+    height: inherit;
+  }
+}
+
+*:focus {
+  outline: none;
+}

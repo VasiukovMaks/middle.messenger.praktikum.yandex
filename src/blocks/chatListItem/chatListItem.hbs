@@ -1,0 +1,17 @@
+<div class="chat-list__item" data-id="{{ chat.id }}">
+    {{#if chat.avatar}}
+        <img class="chat-list__avatar" src="{{ chat.avatar }}" alt="{{ chat.user.display_name }}"/>
+    {{else}}
+        <div class="chat-list__avatar"></div>
+    {{/if}}
+    <div class="chat-list__item-content">
+        <div class="chat-list__item-title">{{ chat.title }}</div>
+        <div class="chat-list__item-message">{{ chat.last_message.content }}</div>
+    </div>
+    <div class="chat-list__item-flex-block">
+        <div class="chat-list__item-message-time">{{ formattedTime }}</div>
+    {{#if chat.unread_count}}
+        <div class="chat-list__item-message-count">{{ chat.unread_count }}</div>
+    {{/if}}
+    </div>
+</div>

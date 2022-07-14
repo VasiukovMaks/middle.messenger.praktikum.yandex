@@ -1,23 +1,12 @@
----
-title: Signup
-css:
-- signup.less
----
-{{!< layout}}
-
-{{#> entryForm/entryForm
-        titleText=signup.title.text
-        buttonText=signup.button.text
-        linkText=signup.link.text
-        linkHref=signup.link.href
-}}
-    {{#each signup.inputs as |input|}}
-        {{> input/input
-                inputClasses="entry-form__input"
-                labelClasses="entry-form__label"
-                type=input.type
-                inputName=input.text
-                name=input.name
-        }}
-    {{/each}}
-{{/ entryForm/entryForm }}
+<main>
+    <form class="entry-form">
+        <div>
+            <h1 class="entry-form__title">{{ titleText }}</h1>
+            {{{inputs}}}
+        </div>
+        <div>
+            {{{button}}}
+            {{{link}}}
+        </div>
+    </form>
+</main>

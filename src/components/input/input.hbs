@@ -1,11 +1,15 @@
-<label for="{{inputName}}" class="input__label {{labelClasses}}">{{inputName}}</label>
 <input
-        id="{{inputName}}"
+        id="{{id}}"
         type="{{type}}"
-        class="input {{inputClasses}}"
+        class="input"
         name="{{name}}"
+    {{#if value}}
         value="{{value}}"
-        {{#if isDisabled}}
-            disabled
-        {{/if}}
+    {{/if}}
+    {{#if disabled}}
+        disabled
+    {{/if}}
+    {{#if placeholder}}
+        placeholder="{{placeholder}}"
+    {{/if}}
 >
