@@ -18,3 +18,5 @@
 
 Запуск в продуктовом режиме
 > npm run start
+
+[Pull request](https://github.com/VasiukovMaks/middle.messenger.praktikum.yandex/pull/2)
