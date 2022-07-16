@@ -9,7 +9,7 @@
         <div class="chat-list__item-message">{{ chat.last_message.content }}</div>
     </div>
     <div class="chat-list__item-flex-block">
-        <div class="chat-list__item-message-time">{{ formattedTime }}</div>
+        <time class="chat-list__item-message-time">{{ formattedTime }}</time>
     {{#if chat.unread_count}}
         <div class="chat-list__item-message-count">{{ chat.unread_count }}</div>
     {{/if}}

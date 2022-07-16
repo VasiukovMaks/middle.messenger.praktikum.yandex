@@ -7,10 +7,9 @@ export interface MessageProps {
   message: ChatMessageDTO,
 }
 
-export class Message extends Block {
+export class Message extends Block<MessageProps> {
   constructor(props: MessageProps) {
-    super(props);
-    this.props.formattedTime = timeFormatting(props.message.time);
+    super({ ...props, formattedTime: timeFormatting(props.message.time) });
   }
 
   render() {

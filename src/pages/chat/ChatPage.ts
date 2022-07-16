@@ -11,10 +11,9 @@ interface ChatPageProps {
   chats: ChatsResponseDTO[];
 }
 
-export default class ChatPage extends Block {
+export default class ChatPage extends Block<ChatPageProps> {
   constructor(props: ChatPageProps) {
-    super(props);
-    this.props.isSelectChat = 0;
+    super({ ...props, selectChatId: 0 });
   }
 
   public setSelectChat(id: number):void {
@@ -28,7 +27,7 @@ export default class ChatPage extends Block {
       inputClassName: 'current-chat__input',
       placeholder: 'Сообщение',
     });
-    this.props.isSelectChat = id;
+    this.setProps({ isSelectChat: id });
   }
 
   protected initChildren() {

@@ -7,15 +7,14 @@ import { MyEvent } from '../../typings/customEvents';
 import validate from '../../utils/scripts/validate';
 
 interface ProfilePageProps {
-  inputsData: TextFieldProps[] | TextFieldProps;
+  inputsData: TextFieldProps[];
 }
 
-export default class ProfilePage extends Block {
+export default class ProfilePage extends Block<ProfilePageProps> {
   private storeInputs: Record<string, string>;
 
   constructor(props: ProfilePageProps) {
-    super(props);
-    this.props.showSaveButton = false;
+    super({ ...props, showSaveButton: false });
   }
 
   initChildren() {
@@ -68,7 +67,7 @@ export default class ProfilePage extends Block {
   private enableInputs(e: MyEvent) {
     e.preventDefault();
     this.children.inputs.map((input: TextField) => input.setProps({ disabled: false }));
-    this.props.showSaveButton = true;
+    this.setProps({ showSaveButton: true });
   }
 
   handlerSubmit(e: Event):void {

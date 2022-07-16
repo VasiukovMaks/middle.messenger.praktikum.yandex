@@ -17,7 +17,7 @@ export interface TextFieldProps {
   events?: Record<string, (e: Event) => void>
 }
 
-export default class TextField extends Block {
+export default class TextField extends Block<TextFieldProps> {
   constructor(props: TextFieldProps) {
     super(props);
   }
@@ -48,6 +48,7 @@ export default class TextField extends Block {
   }
 
   componentDidUpdate(oldProps: any, newProps: any): any {
+    console.log(oldProps);
     this.children.inputNode.setProps(newProps);
     return true;
   }

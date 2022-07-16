@@ -8,10 +8,10 @@ import { MyEvent } from '../../typings/customEvents';
 
 interface LoginPageProps {
   titleText: string;
-  inputsData: TextFieldProps[] | TextFieldProps;
+  inputsData: TextFieldProps[];
 }
 
-export default class LoginPage extends Block {
+export default class LoginPage extends Block<LoginPageProps> {
   private storeInputs: Record<string, string>;
 
   constructor(props: LoginPageProps) {

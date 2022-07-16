@@ -11,10 +11,9 @@ export interface ChatListItemProps {
   }
 }
 
-export class ChatListItemComponent extends Block {
+export class ChatListItemComponent extends Block<ChatListItemProps> {
   constructor(props: ChatListItemProps) {
-    super(props);
-    this.props.formattedTime = timeFormatting(props.chat.last_message?.time);
+    super({ ...props, formattedTime: timeFormatting(props.chat.last_message?.time) });
     this.props.events = {
       click: (e: any) => {
         this.props.onclick(Number(e.currentTarget.getAttribute('data-id')));

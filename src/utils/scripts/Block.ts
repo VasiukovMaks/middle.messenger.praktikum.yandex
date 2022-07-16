@@ -1,7 +1,7 @@
 import { nanoid } from 'nanoid';
 import EventBus from './EventBus';
 
-export default class Block {
+export default class Block<Props extends {}> {
   static EVENTS = {
     INIT: 'init',
     FLOW_CDM: 'flow:component-did-mount',
@@ -16,7 +16,7 @@ export default class Block {
   // @ts-ignore
   private readonly _meta: { props: object };
 
-  protected props: any;
+  protected props: Props;
 
   protected children: any;
 
@@ -39,6 +39,7 @@ export default class Block {
       props,
     };
 
+    // @ts-ignore
     this.props = this._makePropsProxy(props);
 
     this.initChildren();

@@ -10,7 +10,7 @@ export interface ChatListProps {
   onclick: (id: number) => void;
 }
 
-export class ChatList extends Block {
+export class ChatList extends Block<ChatListProps> {
   constructor(props: ChatListProps) {
     super(props);
   }

@@ -5,7 +5,7 @@ interface LayoutProps {
   body: any
 }
 
-export default class Layout extends Block {
+export default class Layout extends Block<LayoutProps> {
   constructor(props: LayoutProps) {
     super(props);
   }

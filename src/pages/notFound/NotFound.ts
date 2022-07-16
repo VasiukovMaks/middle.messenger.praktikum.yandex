@@ -2,7 +2,7 @@ import Block from '../../utils/scripts/Block';
 import template from './notFound.hbs';
 import Link from '../../components/link/Link';
 
-export default class NotFoundPage extends Block {
+export default class NotFoundPage extends Block<{}> {
   constructor() {
     super();
   }
@@ -16,6 +16,6 @@ export default class NotFoundPage extends Block {
   }
 
   render() {
-    return this.compile(template, { ...this.props });
+    return this.compile(template, {});
   }
 }
