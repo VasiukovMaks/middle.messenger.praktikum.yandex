@@ -1,1 +1,10 @@
-<a href="{{href}}" target="{{target}}" class="link {{classes}}">{{text}}</a>
+<a
+        href="{{href}}"
+    {{#if target}}
+        target="{{target}}"
+    {{else}}
+        target="_self"
+    {{/if}}
+        class="link {{className}}">
+    {{label}}
+</a>

@@ -1,9 +1,19 @@
 # Сhat
 
-В данном проекте представлены статические страницы для приложения чата.
-Страницы верстались по [макету](https://www.figma.com/file/jF5fFFzgGOxQeB4CmKWTiE/Chat_external_link?node-id=0%3A1)
+Проект приложение чата.
+На данном этапе реализованы:
+ - Класс работы с HTTP-запросами;
+ - Генерация страниц на стороне клиента, использовался шаблонизатор handlebars;
+ - Валидация форм.
+
+В проекте применены паттерны Event Bus, MVC, а также внедрены такие технологии как TypeScript, ESLint, Stylelint.
+
+[Pull request](https://github.com/VasiukovMaks/middle.messenger.praktikum.yandex/pull/2)
 
 Задеплоеный проект [тут](https://mvchat.netlify.app/)
+
+Страницы верстались по [макету](https://www.figma.com/file/jF5fFFzgGOxQeB4CmKWTiE/Chat_external_link?node-id=0%3A1)
+
 
 Установка зависимостей
 > npm install

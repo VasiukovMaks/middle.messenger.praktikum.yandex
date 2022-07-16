@@ -1,14 +1,30 @@
----
-title: Чаты
-css:
-- chat.less
----
-
-{{!< layout}}
-
 <main>
-    <h1>Заглушка</h1>
-    <a href="../login/login.hbs">вход</a>
-    <a href="../signup/signup.hbs">регистрация</a>
-    <a href="../profile/profile.hbs">профиль</a>
+    {{{chatList}}}
+    {{#if isSelectChat}}
+        <div class="current-chat">
+            <div class="current-chat__header">
+                <div class="current-chat__flex-block">
+                    <div class="current-chat__avatar"></div>
+                    <div class="current-chat__title">
+                        Вадим
+                    </div>
+                </div>
+                <div class="current-chat__menu">
+
+                </div>
+            </div>
+            <div class="current-chat__messages">
+                {{{messages}}}
+            </div>
+            <div class="current-chat__footer">
+                <div class="current-chat__attachments-button"></div>
+                <div class="current-chat__entry-field">
+                    {{{input}}}
+                </div>
+                <div class="current-chat__send-button"></div>
+            </div>
+        </div>
+    {{else}}
+        <div class="current-chat_empty">Выберите чат чтобы отправить сообщение</div>
+    {{/if}}
 </main>
